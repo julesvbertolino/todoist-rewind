@@ -15,7 +15,7 @@
 
 ---
 
-Todoist is an incredible task manager, but its logbook has always felt cluttered and hard to read. Todoist Rewind is a free tool that helps you review your accomplished tasks while giving you even more statistics to understand your productivity deeper. And it runs entirely in your browser, so your data doesn't go anywhere.
+Todoist is an incredible task manager, but reviewing completed work in its logbook can still feel cluttered and hard to read. Todoist Rewind turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
 
 🔗 **Live App:** [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 

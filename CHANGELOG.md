@@ -24,6 +24,7 @@ All notable changes to Todoist Rewind are documented in this file.
 
 ### Changed
 
+- Updated the README product overview to reflect flexible periods, comparative Insights, labels, filters, grouping, PNG export, and local-only data handling.
 - Replaced the demo preview card with a quiet text action that matches the product’s existing controls.
 - Added a compact play marker to the demo action and linked the “Made by julesbertolino” credit directly to alias-digital.fr.
 - Added `todoist.julesbertolino.fr` to the Insights footer so it is included in PNG exports.
