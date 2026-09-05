@@ -27,13 +27,13 @@ Todoist is an incredible task manager, but its logbook has always felt cluttered
 
 ### 📊 Flexible Time Frames & Filters
 
-Choose the period that matters. You can select your time frame between Day, Week, Month and Year view. Navigate backwards and forward to select the period of your choice. Filter tasks by priority level or by project so you can focus on exactly what matters.
+Choose the period that matters: Day, Week, Month, Year, or a custom date range. Navigate backward and forward, then filter by priority, project, or label so you can focus on exactly what matters.
 
 ![Time periods and filters](https://todoist.julesbertolino.fr/time-filter.jpg)
 
 ### ✅ Completed Tasks
 
-Every task you've finished, displayed beautifully with its project, completion date, and priority. Click any task to jump straight to it in Todoist. No more digging through your app trying to remember when you completed something.
+Every task you've finished, displayed with its project, labels, completion date, and priority. Group the log by time, project, or label, and click any task to jump straight to it in Todoist.
 
 ### 🎯 Focus Score
 
@@ -41,7 +41,7 @@ The focus score helps you fight the illusion of productivity and check if you're
 
 ### 📈 Insights Dashboard
 
-There's a reason people love their years in review—now you can get your Todoist wrapped at any time of the year. The insights dashboard gives you precious numbers and graphs to see what matters:
+There's a reason people love their years in review—now you can get your Todoist wrapped at any time of the year. The Insights dashboard adapts to the selected time frame and compares it with the immediately preceding equivalent period. It includes:
 
 - Number of tasks completed
 - Focus score
@@ -52,6 +52,11 @@ There's a reason people love their years in review—now you can get your Todois
 - Task completion by day of the week
 - Task completion by time of day
 - Projects repartition
+- Label usage
+- Priority mix
+- Period-specific metrics such as active days, streaks, best week, and active span
+
+The interface also supports light and dark themes, responsive layouts, and keyboard shortcuts for common review actions.
 
 ![Productivity insights with charts](https://todoist.julesbertolino.fr/insights.jpg)
 
