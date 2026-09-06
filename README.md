@@ -23,54 +23,75 @@ Todoist is an incredible task manager, but reviewing completed work in its logbo
 
 ---
 
-## Features
+<a id="features"></a>
 
-### 📊 Review Any Period
+## Navigate your history
 
-Review a day, week, month, year, or a custom date range. Move backward and forward through the same period, then compare the result with the immediately preceding equivalent period.
+Use the navigation bar to decide what you want to review before diving into the detail.
 
-![Navigate between time frames](assets/media/navigation.gif)
+### Choose a time frame
+
+Switch between Day, Week, Month, and Year, then move backward or forward through equivalent periods. The summary and Insights always compare the selected period with the one immediately before it.
+
+![Move between time frames](assets/media/navigation.gif)
+
+### Create a custom range
+
+Need a review that does not fit a calendar boundary? Set your own start and end dates. Once it is selected, the arrows move by that same span—ideal for sprints, holidays, or a project phase.
 
 ![Choose a custom date range](assets/media/custom-date-range.gif)
 
-### 🔎 Narrow the Log, Not Your History
+### Filter the review
 
-Keep only the work you want to review: filter by priority, project, label, or tasks without a label. Reset filters in one click when you want the complete picture again.
+Narrow the log by priority, project, label, or tasks without a label. The filter badge shows when a selection is active, and Reset restores the full view in one click.
 
 ![Filter completed tasks](assets/media/filters.gif)
 
-### ✅ Completed Tasks
+## Read the completed-task log
 
-Every task you've finished is displayed with its project, labels, completion time, and priority. Group the log by the unit that makes sense for the selected period—day, week, month, project, or label—then switch between newest-first and priority sorting. Click a task to open it in Todoist.
+The log preserves the context that matters: each completed task keeps its project, labels, completion time, and priority.
+
+### Group tasks your way
+
+Choose the grouping that makes sense for the current period: day, week, month, project, or label. A weekly review can become a day-by-day story; a project review can become a clean handover.
 
 ![Group completed tasks](assets/media/grouping.gif)
 
-![Sort tasks by newest or priority](assets/media/sort-priority.gif)
+### Sort and open a task
 
-### 🎯 Focus Score
+Switch between newest-first and priority sorting. When you need the original context, select a task to open it directly in Todoist.
 
-The focus score helps you fight the illusion of productivity and check if you're putting your energy in high-priority tasks or just spending time on low-priority busy work.
+![Sort by newest completion or priority](assets/media/sort-priority.gif)
 
-### 📈 Insights Dashboard
+## Understand the bigger picture
 
-There's a reason people love their years in review—now you can get your Todoist wrapped at any time of the year. The Insights dashboard adapts its metrics and charts to the selected time frame, and compares each result with the immediately preceding equivalent period. It includes:
+Insights turns a task log into an honest review of where your attention went.
 
-- Number of tasks completed
-- Focus score
-- Average completions per active unit
-- Most productive day, weekday, hour, or month when relevant
-- Active days, active span, longest streak, or best week when relevant
-- Completion patterns by day, weekday, hour, or month
-- Project distribution
-- Most-used labels
-- Priority mix
-- A PNG export of the complete Insights sheet
+### Check the Focus Score
 
-The interface also supports light and dark themes, responsive layouts, and keyboard shortcuts for periods, filters, grouping, and Insights.
+Focus Score is the share of completed tasks marked P1 or P2. It helps distinguish meaningful progress from a week spent only clearing low-priority busy work.
 
-![Productivity insights with charts](assets/media/insights.gif)
+### Explore period-aware Insights
+
+The dashboard changes with the selected period instead of forcing the same charts everywhere. It combines totals, comparisons, productive moments, pace, project distribution, labels, priority mix, and the metrics that make sense for that period—such as active days, best week, or longest streak.
+
+![Explore the Insights dashboard](assets/media/insights.gif)
+
+### Export the review
+
+Export the complete Insights sheet as a PNG whenever you want to keep, share, or revisit a snapshot of the period.
+
+## Made for a calm review
+
+### Choose a theme
+
+Todoist Rewind follows your system preference on first use and remembers your chosen light or dark theme locally.
 
 ![Switch between light and dark themes](assets/media/theme-toggle.gif)
+
+### Keep your hands on the keyboard
+
+Use the arrow keys to move between periods, `D` / `W` / `M` / `Y` to change the time frame, and `F`, `G`, or `I` to open filters, grouping, or Insights. The layout remains usable on mobile too.
 
 ---
 
