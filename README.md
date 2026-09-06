@@ -25,19 +25,23 @@ Todoist is an incredible task manager, but reviewing completed work in its logbo
 
 ## Features
 
-### 📊 Flexible Time Frames & Filters
+### 📊 Review Any Period
 
-Choose the period that matters: Day, Week, Month, Year, or a custom date range. Navigate backward and forward, then filter by priority, project, or label so you can focus on exactly what matters.
+Review a day, week, month, year, or a custom date range. Move backward and forward through the same period, then compare the result with the immediately preceding equivalent period.
 
 ![Navigate between time frames](assets/media/navigation.gif)
 
 ![Choose a custom date range](assets/media/custom-date-range.gif)
 
+### 🔎 Narrow the Log, Not Your History
+
+Keep only the work you want to review: filter by priority, project, label, or tasks without a label. Reset filters in one click when you want the complete picture again.
+
 ![Filter completed tasks](assets/media/filters.gif)
 
 ### ✅ Completed Tasks
 
-Every task you've finished, displayed with its project, labels, completion date, and priority. Group the log by time, project, or label, and click any task to jump straight to it in Todoist.
+Every task you've finished is displayed with its project, labels, completion time, and priority. Group the log by the unit that makes sense for the selected period—day, week, month, project, or label—then switch between newest-first and priority sorting. Click a task to open it in Todoist.
 
 ![Group completed tasks](assets/media/grouping.gif)
 
@@ -49,22 +53,20 @@ The focus score helps you fight the illusion of productivity and check if you're
 
 ### 📈 Insights Dashboard
 
-There's a reason people love their years in review—now you can get your Todoist wrapped at any time of the year. The Insights dashboard adapts to the selected time frame and compares it with the immediately preceding equivalent period. It includes:
+There's a reason people love their years in review—now you can get your Todoist wrapped at any time of the year. The Insights dashboard adapts its metrics and charts to the selected time frame, and compares each result with the immediately preceding equivalent period. It includes:
 
 - Number of tasks completed
 - Focus score
-- Average completions for the time frame
-- Most productive day
-- Most productive time
-- Task completion by month
-- Task completion by day of the week
-- Task completion by time of day
-- Projects repartition
-- Label usage
+- Average completions per active unit
+- Most productive day, weekday, hour, or month when relevant
+- Active days, active span, longest streak, or best week when relevant
+- Completion patterns by day, weekday, hour, or month
+- Project distribution
+- Most-used labels
 - Priority mix
-- Period-specific metrics such as active days, streaks, best week, and active span
+- A PNG export of the complete Insights sheet
 
-The interface also supports light and dark themes, responsive layouts, and keyboard shortcuts for common review actions.
+The interface also supports light and dark themes, responsive layouts, and keyboard shortcuts for periods, filters, grouping, and Insights.
 
 ![Productivity insights with charts](assets/media/insights.gif)
 
