@@ -19,7 +19,7 @@ Todoist is an incredible task manager, but reviewing completed work in its logbo
 
 🔗 **Live App:** [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 
-![Todoist Rewind Dashboard](https://todoist.julesbertolino.fr/TodoistRewind.jpg)
+![Todoist Rewind dashboard](assets/media/cover.png)
 
 ---
 
@@ -29,11 +29,19 @@ Todoist is an incredible task manager, but reviewing completed work in its logbo
 
 Choose the period that matters: Day, Week, Month, Year, or a custom date range. Navigate backward and forward, then filter by priority, project, or label so you can focus on exactly what matters.
 
-![Time periods and filters](https://todoist.julesbertolino.fr/time-filter.jpg)
+![Navigate between time frames](assets/media/navigation.gif)
+
+![Choose a custom date range](assets/media/custom-date-range.gif)
+
+![Filter completed tasks](assets/media/filters.gif)
 
 ### ✅ Completed Tasks
 
 Every task you've finished, displayed with its project, labels, completion date, and priority. Group the log by time, project, or label, and click any task to jump straight to it in Todoist.
+
+![Group completed tasks](assets/media/grouping.gif)
+
+![Sort tasks by newest or priority](assets/media/sort-priority.gif)
 
 ### 🎯 Focus Score
 
@@ -58,7 +66,9 @@ There's a reason people love their years in review—now you can get your Todois
 
 The interface also supports light and dark themes, responsive layouts, and keyboard shortcuts for common review actions.
 
-![Productivity insights with charts](https://todoist.julesbertolino.fr/insights.jpg)
+![Productivity insights with charts](assets/media/insights.gif)
+
+![Switch between light and dark themes](assets/media/theme-toggle.gif)
 
 ---
 
