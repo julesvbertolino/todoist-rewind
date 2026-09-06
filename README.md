@@ -1,12 +1,13 @@
 <div align="center">
-  <h1>🎯 Todoist Rewind</h1>
+  <p>🎯</p>
+  <h1>Todoist Rewind</h1>
   <p><strong>Your weekly review got an upgrade.</strong></p>
   <p>
-    <a href="https://todoist.julesbertolino.fr">Live Demo</a> •
-    <a href="#features">Features</a> •
-    <a href="#getting-started">Getting Started</a> •
-    <a href="#privacy-first">Privacy</a> •
-    <a href="#contributing">Contributing</a>
+    <a href="https://todoist.julesbertolino.fr">Live app</a> •
+    <a href="#about-the-project">About</a> •
+    <a href="#getting-started">Getting started</a> •
+    <a href="#contributing">Contributing</a> •
+    <a href="CHANGELOG.md">Changelog</a>
   </p>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -15,7 +16,24 @@
 
 ---
 
-Todoist is an incredible task manager, but reviewing completed work in its logbook can still feel cluttered and hard to read. Todoist Rewind turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
+## Contents
+
+- [About the project](#about-the-project)
+- [Navigate your history](#navigate-your-history)
+- [Tasks logbook](#tasks-logbook)
+- [Insights: understand your patterns](#insights-understand-your-patterns)
+- [Quality-of-life details](#quality-of-life-details)
+- [Privacy](#privacy)
+- [Getting started](#getting-started)
+- [Contributing](#contributing)
+- [Contact / About me](#contact--about-me)
+- [License](#license)
+
+---
+
+# About the project
+
+Todoist is excellent at showing what is next, but reviewing completed work in its logbook can still feel cluttered and hard to read. Todoist Rewind turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
 
 🔗 **Live App:** [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 
@@ -23,9 +41,7 @@ Todoist is an incredible task manager, but reviewing completed work in its logbo
 
 ---
 
-<a id="features"></a>
-
-## Navigate your history
+# Navigate your history
 
 Use the navigation bar to decide what you want to review before diving into the detail.
 
@@ -47,7 +63,7 @@ Narrow the log by priority, project, label, or tasks without a label. The filter
 
 ![Filter completed tasks](assets/media/filters.gif)
 
-## Read the completed-task log
+# Tasks logbook
 
 The log preserves the context that matters: each completed task keeps its project, labels, completion time, and priority.
 
@@ -63,7 +79,7 @@ Switch between newest-first and priority sorting. When you need the original con
 
 ![Sort by newest completion or priority](assets/media/sort-priority.gif)
 
-## Understand the bigger picture
+# Insights: understand your patterns
 
 Insights turns a task log into an honest review of where your attention went.
 
@@ -81,7 +97,7 @@ The dashboard changes with the selected period instead of forcing the same chart
 
 Export the complete Insights sheet as a PNG whenever you want to keep, share, or revisit a snapshot of the period.
 
-## Made for a calm review
+# Quality-of-life details
 
 ### Choose a theme
 
@@ -95,7 +111,7 @@ Use the arrow keys to move between periods, `D` / `W` / `M` / `Y` to change the 
 
 ---
 
-## Privacy First
+# Privacy
 
 Data is important and none of us want to trust a random tool with our API key and most private data.
 
@@ -111,7 +127,7 @@ Don't take my word for granted—check the code yourself.
 
 ---
 
-## Getting Started
+# Getting started
 
 1. Grab your Todoist API key from Todoist Settings → Integrations
 2. Open [Todoist Rewind](https://todoist.julesbertolino.fr) and paste your API key
@@ -121,7 +137,7 @@ That's it. Your data loads directly from Todoist into your browser.
 
 ---
 
-## Contributing
+# Contributing
 
 Want to improve Todoist Rewind? Here's how:
 
@@ -151,16 +167,20 @@ I'll review PRs as soon as I can. Please keep changes focused and test your code
 
 ---
 
-## License
+# Contact / About me
+
+Todoist Rewind is made by [Jules Bertolino](https://julesbertolino.fr), an independent digital product designer and developer based in Antibes, France.
+
+- Explore the live app: [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
+- See more work: [julesbertolino.fr](https://julesbertolino.fr)
+- Support the project: [Buy me a coffee](https://buymeacoffee.com/julesbertolino)
+
+---
+
+# License
 
 MIT License - feel free to fork, modify, and use this however you want.
 
 See [LICENSE](LICENSE) for details.
 
 ---
-
-## Support
-
-If this tool helps your productivity workflow, consider:
-
-☕ [Buy me a coffee](https://buymeacoffee.com/julesbertolino)
