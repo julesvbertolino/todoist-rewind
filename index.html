@@ -37,8 +37,8 @@ input{font:inherit}
 .app{container-type:inline-size;background:var(--paper);max-width:1360px;margin:0 auto}
 
 /* sign in */
-.login{position:fixed;inset:0;z-index:2000;background:var(--paper);display:grid;place-items:center;padding:20px}
-.login-card{width:min(440px,100%);background:var(--surface);border:1px solid var(--line-soft);border-radius:24px;
+.login{position:fixed;inset:0;z-index:2000;background:var(--paper);display:grid;place-items:center;padding:24px;overflow-y:auto}
+.login-card{width:100%;background:var(--surface);border:1px solid var(--line-soft);border-radius:24px;
   padding:38px;box-shadow:0 18px 60px rgba(0,0,0,.08)}
 .brand-mark{width:42px;height:42px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;
   font-size:22px;font-weight:900;margin-bottom:22px;box-shadow:0 8px 18px rgba(209,69,59,.22)}
@@ -273,21 +273,55 @@ input{font:inherit}
   .hbtn span{display:none}.hbtn{padding:9px 11px}.sheet-body{padding:16px 14px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.charts{grid-template-columns:1fr;gap:12px}
 }
 @media (max-width:440px){.sheet-head{align-items:flex-start}.sheet-head p{font-size:12px;line-height:1.35}.kpis{grid-template-columns:1fr}}
+
+/* Sign-in preview and accessible group controls */
+.login-layout{width:min(1100px,100%);display:grid;grid-template-columns:minmax(0,1.45fr) minmax(360px,420px);gap:48px;align-items:center;margin:auto}
+.login-card{padding:32px}
+.login-card h1{font-size:26px}
+.primary,.demo-link{display:flex;justify-content:center;align-items:center;gap:9px;min-height:48px;padding:12px 16px;font-size:15px;font-weight:700;border-radius:10px;line-height:24px}
+.demo-link{background:#F1F0EE;color:var(--ink);margin-top:10px;box-shadow:inset 0 0 0 1px var(--line)}
+.demo-link:hover{background:#E8E6E3;text-decoration:none}
+html[data-theme="dark"] .demo-link{background:#303030}
+html[data-theme="dark"] .demo-link:hover{background:#3A3A3A}
+.login-error:empty{display:none}
+.token-help{font-size:12px;color:var(--ink-soft);margin:9px 0 16px;line-height:1.45}
+.token-help strong{color:var(--ink-soft);font-weight:650}
+.privacy a{color:inherit;text-underline-offset:3px}
+.privacy .github-link{display:inline-flex;align-items:center;gap:4px;font-weight:700}
+.privacy .github-link svg{width:14px;height:14px;flex:none}
+.privacy a:hover{color:var(--red)}
+.login-preview{background:var(--surface);border:1px solid var(--line-soft);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.login-preview img{display:block;width:100%;height:auto}
+.login-preview p{padding:18px;font-size:13px;color:var(--ink-soft)}
+.ghead{top:var(--bar-height,78px);align-items:center;padding:16px 0 12px;cursor:pointer;list-style:none;isolation:isolate}
+.ghead::-webkit-details-marker{display:none}
+.ghead::before{content:"";position:absolute;inset:0 -10px;background:var(--paper);z-index:-1}
+.ghead h3{color:var(--red);font-size:14px;display:inline}
+html[data-theme="dark"] .ghead h3{color:#F07870}
+.group-chevron{width:16px;height:16px;flex-shrink:0;color:var(--red);transition:transform .15s}
+.task-group[open] .group-chevron{transform:rotate(90deg)}
+.ghead .rel{font-size:12px}
+@media(max-width:760px){.login-layout{grid-template-columns:minmax(0,480px);max-width:480px;gap:24px}.login-preview{order:2}.login-card{order:1;padding:28px}.login{padding:20px 16px}}
+@media(max-width:440px){.login-card{padding:22px}.login{padding:20px 16px}}
+
 </style>
 </head>
 <body>
 <section class="login" id="login">
+  <div class="login-layout">
+  <div class="login-preview"><img src="assets/media/todois-rewind%20view.gif" alt="Animated tour of Todoist Rewind’s activity log, filters, and insights" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><p hidden>The tour could not load. Try the demo to explore Todoist Rewind.</p></div>
   <form class="login-card" onsubmit="handleLogin(event)">
-    <div class="brand-mark" aria-hidden="true">✓</div>
     <h1>Todoist Rewind</h1>
     <p>Your completed tasks, finally clear enough to review.</p>
     <label for="token" class="hidden">Todoist API token</label>
     <input class="token" id="token" type="password" autocomplete="off" placeholder="Paste your Todoist API token" required>
+    <p class="token-help">Find your token in Todoist → <strong>Settings → Integrations → Developer</strong>.</p>
     <button class="primary" type="submit">Open my Rewind</button>
-    <button class="demo-link" type="button" onclick="startDemo()"><span class="ico" aria-hidden="true">▶</span>Explore demo data</button>
+    <button class="demo-link" type="button" onclick="startDemo()"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 21v-7m3.5 7v-4m3.5 4v-9"/></svg>Explore demo data</button>
     <div class="login-error" id="login-error" role="status" aria-live="polite"></div>
-    <div class="privacy"><strong>Private by design.</strong> Your token and tasks stay in this browser. Todoist Rewind has no server and collects nothing.</div>
+    <div class="privacy"><strong>Private by design.</strong> Your token is stored in this browser and sent only to Todoist to load your tasks. No backend, no data collection. <a class="github-link" href="https://github.com/julesvbertolino/todoist-rewind" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.66.07-.52.28-.87.51-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.65 7.65 0 0 1 8 4.8c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.47v2.18c0 .21.14.45.55.38A8 8 0 0 0 8 0Z"/></svg>Check the code on GitHub</a>.</div>
   </form>
+  </div>
 </section>
 
 <div class="app hidden" id="app">
@@ -513,6 +547,7 @@ function cmp(id,now,before,text){const el=document.getElementById(id);
   if(before===null||now===null){el.className='cmp';el.textContent=text;return}
   const up=now>before,same=now===before;el.className='cmp '+(same?'':up?'up':'down');
   el.innerHTML=`<span class="arrow">${same?'●':up?'▲':'▼'}</span>${text}`}
+const collapsedGroups=new Set();
 function renderList(list){
   const el=document.getElementById('list');
   const r=range(S.offset),needsHistory=!S.demo&&S.fetchedFrom&&r.s<S.fetchedFrom;
@@ -521,9 +556,14 @@ function renderList(list){
   if(!list.length){el.innerHTML=h+`<div class="empty"><b>No tasks in this period</b>Try another period or loosen the filters.</div>`;return}
   const g=new Map();for(const t of list){const k=gkey(t);if(!g.has(k))g.set(k,[]);g.get(k).push(t)}
   for(const[k,items]of g){
-    if(S.group!=='none')h+=`<div class="ghead"><h3>${esc(k)}</h3>${grel(items[0])}<span class="c num">${items.length}</span></div>`;
-    for(const t of items)h+=row(t)}
+    const key=JSON.stringify([S.group,k]);
+    if(S.group!=='none')h+=`<details class="task-group" data-group="${esc(key)}" ${collapsedGroups.has(key)?'':'open'}><summary class="ghead"><svg class="group-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"/></svg><h3>${esc(k)}</h3>${grel(items[0])}<span class="c num">${items.length}</span></summary><div class="group-tasks">`;
+    for(const t of items)h+=row(t);
+    if(S.group!=='none')h+='</div></details>'}
   el.innerHTML=h;
+  el.querySelectorAll('.task-group').forEach(group=>group.addEventListener('toggle',()=>{
+    if(group.open)collapsedGroups.delete(group.dataset.group);else collapsedGroups.add(group.dataset.group);
+  }));
 }
 function gkey(t){
   if(S.group==='day')return t.at.toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
@@ -785,6 +825,12 @@ async function init(){
   S.token=token;showApp();try{await loadAccount()}catch(error){localStorage.removeItem('todoist_token');document.getElementById('app').classList.add('hidden');document.getElementById('login').classList.remove('hidden');setLoginError('Your saved token is no longer valid. Please connect again.')}
 }
 init();
+</script>
+<script>
+// Keep the sticky group header flush with the toolbar at every viewport size.
+new ResizeObserver(entries=>{
+  document.documentElement.style.setProperty('--bar-height',entries[0].target.getBoundingClientRect().height+'px');
+}).observe(document.querySelector('.bar'));
 </script>
 </body>
 </html>

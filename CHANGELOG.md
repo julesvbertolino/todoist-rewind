@@ -8,6 +8,31 @@ All notable product changes to Todoist Rewind are documented here. Documentation
 
 - Added a visual product tour to the README and aligned feature descriptions with the current interface.
 
+## [2.1.0] - 2026-09-08
+
+### Added
+
+- Added a product-tour GIF to the sign-in page.
+- Added collapsible task groups with chevrons for grouped log views.
+- Added a GitHub link and icon in the sign-in privacy callout for inspecting the source code.
+
+### Changed
+
+- Redesigned sign-in as a two-column layout: product preview on the left and connection card on the right.
+- Made “Explore demo data” a full-size secondary button with an icon.
+- Simplified API-token guidance to Todoist Settings → Integrations → Developer.
+- Made grouped task headings red to improve scanning.
+- Removed the decorative icon above the sign-in title to create more room.
+
+### Fixed
+
+- Aligned sticky grouped-task headers with the live height of the period bar, preventing tasks from showing through while scrolling.
+- Preserved the open or collapsed state of each task group when the log re-renders.
+
+### Privacy
+
+- Clarified that the token is stored in the browser and sent only to Todoist; no backend or data collection was added.
+
 ## [2.0.0] - 2026-09-05
 
 ### Added
