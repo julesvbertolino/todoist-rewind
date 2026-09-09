@@ -1,6 +1,6 @@
 <div align="center">
   <p>🎯</p>
-  <h1>Todoist Rewind</h1>
+  <h1>Rewind for Todoist</h1>
   <p><strong>Your weekly review got an upgrade.</strong></p>
   <p>
     <a href="https://todoist.julesbertolino.fr">Live app</a> •
@@ -12,6 +12,8 @@
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![GitHub release](https://img.shields.io/github/release/julesvbertolino/todoist-rewind.svg)](https://github.com/julesvbertolino/todoist-rewind/releases)
+
+  <sub>An independent project. Not created by, affiliated with, or supported by Todoist. “Todoist” is a trademark of Doist Inc.</sub>
 </div>
 
 ---
@@ -27,17 +29,20 @@
 - [Getting started](#getting-started)
 - [Contributing](#contributing)
 - [Contact / About me](#contact--about-me)
+- [Disclaimer & trademarks](#disclaimer--trademarks)
 - [License](#license)
 
 ---
 
 # About the project
 
-Todoist is excellent at showing what is next, but reviewing completed work in its logbook can still feel cluttered and hard to read. Todoist Rewind turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
+Todoist is excellent at showing what is next, but reviewing completed work in its logbook can still feel cluttered and hard to read. Rewind for Todoist turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
+
+> **Rewind for Todoist is an independent project. It is not created by, affiliated with, or supported by Todoist.** "Todoist" is a trademark of Doist Inc., used here only to describe compatibility. See [Disclaimer & trademarks](#disclaimer--trademarks).
 
 🔗 **Live App:** [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 
-![Todoist Rewind dashboard](assets/media/cover.png)
+![Rewind for Todoist dashboard](assets/media/cover.png)
 
 ---
 
@@ -101,7 +106,7 @@ Export the complete Insights sheet as a PNG whenever you want to keep, share, or
 
 ### Choose a theme
 
-Todoist Rewind follows your system preference on first use and remembers your chosen light or dark theme locally.
+Rewind for Todoist follows your system preference on first use and remembers your chosen light or dark theme locally.
 
 ![Switch between light and dark themes](assets/media/theme-toggle.gif)
 
@@ -130,7 +135,7 @@ Don't take my word for granted—check the code yourself.
 # Getting started
 
 1. Grab your Todoist API key from Todoist Settings → Integrations
-2. Open [Todoist Rewind](https://todoist.julesbertolino.fr) and paste your API key
+2. Open [Rewind for Todoist](https://todoist.julesbertolino.fr) and paste your API key
 3. Or try with demo data first if you're not ready
 
 That's it. Your data loads directly from Todoist into your browser.
@@ -139,7 +144,7 @@ That's it. Your data loads directly from Todoist into your browser.
 
 # Contributing
 
-Want to improve Todoist Rewind? Here's how:
+Want to improve Rewind for Todoist? Here's how:
 
 ### Reporting Bugs
 Found a bug? [Open an issue](https://github.com/julesvbertolino/todoist-rewind/issues/new) and describe:
@@ -169,11 +174,23 @@ I'll review PRs as soon as I can. Please keep changes focused and test your code
 
 # Contact / About me
 
-Todoist Rewind is made by [Jules Bertolino](https://julesbertolino.fr), an independent digital product designer and developer based in Antibes, France.
+Rewind for Todoist is made by [Jules Bertolino](https://julesbertolino.fr), an independent digital product designer and developer based in Antibes, France.
 
 - Explore the live app: [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 - See more work: [julesbertolino.fr](https://julesbertolino.fr)
 - Support the project: [Buy me a coffee](https://buymeacoffee.com/julesbertolino)
+
+---
+
+# Disclaimer & trademarks
+
+**Rewind for Todoist is an independent, third-party project. It is not created by, affiliated with, endorsed by, or supported by Todoist or Doist Inc.**
+
+- "Todoist" and the Todoist logo are trademarks of Doist Inc. They are used in this project's name and copy only in a descriptive, nominative sense to indicate that the app works with Todoist, in the "Rewind for Todoist" format set out in the [Todoist Brand usage guidelines](https://developer.todoist.com/api/v1/#section/Developing-with-Todoist/Brand-usage).
+- This project is not an official Todoist product. For anything relating to Todoist itself, contact [Doist](https://doist.com).
+- The app connects directly from your browser to the official Todoist API using an API token you provide. It stores nothing on a server.
+
+If you represent Doist and would like a change to how the Todoist name or marks are used here, please open an issue or contact the author and it will be addressed promptly.
 
 ---
 

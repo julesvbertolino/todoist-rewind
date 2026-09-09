@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Todoist Rewind — Activity log & insights</title>
-<meta name="description" content="Review your completed Todoist tasks and understand where your attention went. Private, client-side, and open source.">
+<title>Rewind for Todoist — Activity log & insights</title>
+<meta name="description" content="Review your completed Todoist tasks and understand where your attention went. Private, client-side, and open source. An independent project, not created by, affiliated with, or supported by Todoist.">
 <link rel="icon" href="https://d3ptyyxy2at9ui.cloudfront.net/favicon-a85885.ico">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
@@ -52,6 +52,8 @@ input{font:inherit}
 .demo-link .ico{display:inline-block;margin-right:6px;color:var(--red);font-size:10px;vertical-align:1px}
 .demo-link:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .privacy{font-size:12px;color:var(--ink-soft);line-height:1.5;background:var(--line-soft);border-radius:9px;padding:12px;margin-top:12px}
+.disclaimer{font-size:11px;color:var(--ink-faint);line-height:1.5;margin:12px 0 0}
+.footer-disclaimer{max-width:1320px;margin:0 auto;padding:0 20px 24px;color:var(--ink-faint);font-size:11px;line-height:1.5;text-align:center}
 .login-error{min-height:20px;color:var(--down);font-size:12.5px;margin-top:8px}
 
 /* header */
@@ -309,9 +311,9 @@ html[data-theme="dark"] .ghead h3{color:#F07870}
 <body>
 <section class="login" id="login">
   <div class="login-layout">
-  <div class="login-preview"><img src="assets/media/todois-rewind%20view.gif" alt="Animated tour of Todoist Rewind’s activity log, filters, and insights" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><p hidden>The tour could not load. Try the demo to explore Todoist Rewind.</p></div>
+  <div class="login-preview"><img src="assets/media/todois-rewind%20view.gif" alt="Animated tour of Rewind for Todoist’s activity log, filters, and insights" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><p hidden>The tour could not load. Try the demo to explore Rewind for Todoist.</p></div>
   <form class="login-card" onsubmit="handleLogin(event)">
-    <h1>Todoist Rewind</h1>
+    <h1>Rewind for Todoist</h1>
     <p>Your completed tasks, finally clear enough to review.</p>
     <label for="token" class="hidden">Todoist API token</label>
     <input class="token" id="token" type="password" autocomplete="off" placeholder="Paste your Todoist API token" required>
@@ -320,6 +322,7 @@ html[data-theme="dark"] .ghead h3{color:#F07870}
     <button class="demo-link" type="button" onclick="startDemo()"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 21v-7m3.5 7v-4m3.5 4v-9"/></svg>Explore demo data</button>
     <div class="login-error" id="login-error" role="status" aria-live="polite"></div>
     <div class="privacy"><strong>Private by design.</strong> Your token is stored in this browser and sent only to Todoist to load your tasks. No backend, no data collection. <a class="github-link" href="https://github.com/julesvbertolino/todoist-rewind" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.66.07-.52.28-.87.51-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.65 7.65 0 0 1 8 4.8c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.47v2.18c0 .21.14.45.55.38A8 8 0 0 0 8 0Z"/></svg>Check the code on GitHub</a>.</div>
+    <p class="disclaimer">Rewind for Todoist is an independent project. It is not created by, affiliated with, or supported by Todoist. “Todoist” is a trademark of Doist Inc.</p>
   </form>
   </div>
 </section>
@@ -397,6 +400,7 @@ html[data-theme="dark"] .ghead h3{color:#F07870}
       <a class="footer-action" href="#" onclick="logout();return false"><span class="footer-icon" aria-hidden="true">⏻</span>Disconnect</a>
     </nav>
   </footer>
+  <p class="footer-disclaimer">Rewind for Todoist is an independent project. It is not created by, affiliated with, or supported by Todoist. “Todoist” is a trademark of Doist Inc.</p>
 </div>
 
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="insights-title">
@@ -467,7 +471,7 @@ async function handleLogin(event){
     localStorage.setItem('todoist_token',token);S.token=token;setLoginError('');showApp();await loadAccount();
   }catch(error){localStorage.removeItem('todoist_token');document.getElementById('app').classList.add('hidden');document.getElementById('login').classList.remove('hidden');setLoginError('Todoist could not be reached. Check your connection and try again.')}
 }
-function logout(){if(!confirm('Disconnect Todoist Rewind on this browser?'))return;localStorage.removeItem('todoist_token');location.reload()}
+function logout(){if(!confirm('Disconnect Rewind for Todoist on this browser?'))return;localStorage.removeItem('todoist_token');location.reload()}
 async function loadAccount(){S.loading=true;S.error='';S.loadLabel='Loading projects…';render();try{await fetchProjects();await fetchInitial()}catch(error){S.loading=false;throw error}}
 async function fetchProjects(){
   let cursor=null;do{let url='https://api.todoist.com/api/v1/projects?limit=200';if(cursor)url+=`&cursor=${encodeURIComponent(cursor)}`;
@@ -511,7 +515,7 @@ async function loadOlder(){
   finally{S.loading=false;renderPrioOpts();renderLabelOpts();renderProjectOpts();render()}
 }
 function buildDemo(){
-  PROJECTS=[{id:'p1',name:'Work'},{id:'p2',name:'Personal'},{id:'p3',name:'Home'},{id:'p4',name:'Health'},{id:'p5',name:'Todoist Rewind'}];
+  PROJECTS=[{id:'p1',name:'Work'},{id:'p2',name:'Personal'},{id:'p3',name:'Home'},{id:'p4',name:'Health'},{id:'p5',name:'Rewind for Todoist'}];
   LABELS=['deep-work','quick-win','calls','admin'];TASKS=[];let seed=17;const rnd=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
   const titles=['Review the weekly plan','Send the revised proposal','Write meeting notes','Book a health check','Back up recent photos','Fix the dashboard filter','Call a friend','Plan next week'];
   const today=en(new Date());for(let d=0;d<430;d++){const day=new Date(today);day.setDate(day.getDate()-d);let n=day.getDay()===0?1:2+Math.floor(rnd()*5);if(d>120)n=Math.max(0,n-1);
@@ -817,7 +821,7 @@ function closeModal(){const modal=document.getElementById('modal');if(!modal.has
 async function exportInsights(){const sheet=document.querySelector('.sheet'),body=document.querySelector('.sheet-body');if(!window.html2canvas)return;
   const old={maxHeight:sheet.style.maxHeight,height:sheet.style.height,overflow:body.style.overflow};sheet.style.maxHeight='none';sheet.style.height='auto';body.style.overflow='visible';
   try{const canvas=await html2canvas(sheet,{scale:2,backgroundColor:getComputedStyle(document.documentElement).getPropertyValue('--paper').trim()});
-    const link=document.createElement('a');link.download=`todoist-rewind-${S.scope}.png`;link.href=canvas.toDataURL('image/png');link.click()}
+    const link=document.createElement('a');link.download=`rewind-for-todoist-${S.scope}.png`;link.href=canvas.toDataURL('image/png');link.click()}
   finally{sheet.style.maxHeight=old.maxHeight;sheet.style.height=old.height;body.style.overflow=old.overflow}}
 async function init(){
   const savedTheme=localStorage.getItem('rewind_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');applyTheme(savedTheme);

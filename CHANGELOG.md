@@ -1,12 +1,17 @@
 # Changelog
 
-All notable product changes to Todoist Rewind are documented here. Documentation-only commits do not create a product version.
+All notable product changes to Rewind for Todoist are documented here. Documentation-only commits do not create a product version.
 
 ## [Unreleased]
+
+### Changed
+
+- Renamed the app from "Todoist Rewind" to "Rewind for Todoist" so the Todoist name is no longer the primary name of the app, per the [Todoist Brand usage guidelines](https://developer.todoist.com/api/v1/#section/Developing-with-Todoist/Brand-usage).
 
 ### Documentation
 
 - Added a visual product tour to the README and aligned feature descriptions with the current interface.
+- Added a disclaimer to the app and the README stating that the project is not created by, affiliated with, or supported by Todoist, and that "Todoist" is a trademark of Doist Inc.
 
 ## [2.1.0] - 2026-09-08
 
@@ -97,7 +102,7 @@ All notable product changes to Todoist Rewind are documented here. Documentation
 
 ### Added
 
-- Initial release of Todoist Rewind: a browser-only way to review completed Todoist tasks.
+- Initial release of Rewind for Todoist (released as "Todoist Rewind"; renamed in a later version): a browser-only way to review completed Todoist tasks.
 - Day, Week, Month, and Year views with previous/next period navigation.
 - Filtering by Todoist priority and project.
 - Completed-task log with priority or newest-first sorting and direct links back to Todoist.
