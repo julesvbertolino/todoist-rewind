@@ -11,7 +11,7 @@ All notable product changes to Rewind for Todoist are documented here. Documenta
 ### Documentation
 
 - Added a visual product tour to the README and aligned feature descriptions with the current interface.
-- Added a disclaimer to the app and the README stating that the project is not created by, affiliated with, or supported by Todoist, and that "Todoist" is a trademark of Doist Inc.
+- Added a disclaimer to the app and the README stating that the project is not created by, affiliated with, or supported by Todoist, and that "Todoist" is a trademark of Todoist Inc.
 
 ## [2.1.0] - 2026-09-08
 
