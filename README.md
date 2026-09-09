@@ -13,7 +13,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![GitHub release](https://img.shields.io/github/release/julesvbertolino/todoist-rewind.svg)](https://github.com/julesvbertolino/todoist-rewind/releases)
 
-  <sub>An independent project. Not created by, affiliated with, or supported by Todoist. “Todoist” is a trademark of Doist Inc.</sub>
+  <sub>An independent project. Not created by, affiliated with, or supported by Todoist. “Todoist” is a trademark of Todoist Inc.</sub>
 </div>
 
 ---
@@ -38,7 +38,7 @@
 
 Todoist is excellent at showing what is next, but reviewing completed work in its logbook can still feel cluttered and hard to read. Rewind for Todoist turns it into a clear, private activity review: explore any period from a day to a custom range, filter and group completed tasks, then use contextual Insights to see where your attention went. Compare each period with the one before it, inspect projects, labels, and priority mix, and export the review as a PNG — all directly in your browser. Your Todoist token and data never leave your device.
 
-> **Rewind for Todoist is an independent project. It is not created by, affiliated with, or supported by Todoist.** "Todoist" is a trademark of Doist Inc., used here only to describe compatibility. See [Disclaimer & trademarks](#disclaimer--trademarks).
+> **Rewind for Todoist is an independent project. It is not created by, affiliated with, or supported by Todoist.** "Todoist" is a trademark of Todoist Inc., used here only to describe compatibility. See [Disclaimer & trademarks](#disclaimer--trademarks).
 
 🔗 **Live App:** [todoist.julesbertolino.fr](https://todoist.julesbertolino.fr)
 
@@ -184,13 +184,11 @@ Rewind for Todoist is made by [Jules Bertolino](https://julesbertolino.fr), an i
 
 # Disclaimer & trademarks
 
-**Rewind for Todoist is an independent, third-party project. It is not created by, affiliated with, endorsed by, or supported by Todoist or Doist Inc.**
+**Rewind for Todoist is an independent, third-party project. It is not created by, affiliated with, endorsed by, or supported by Todoist or Todoist Inc.**
 
-- "Todoist" and the Todoist logo are trademarks of Doist Inc. They are used in this project's name and copy only in a descriptive, nominative sense to indicate that the app works with Todoist, in the "Rewind for Todoist" format set out in the [Todoist Brand usage guidelines](https://developer.todoist.com/api/v1/#section/Developing-with-Todoist/Brand-usage).
-- This project is not an official Todoist product. For anything relating to Todoist itself, contact [Doist](https://doist.com).
+- "Todoist" and the Todoist logo are trademarks of Todoist Inc. They are used in this project's name and copy only in a descriptive, nominative sense to indicate that the app works with Todoist, in the "Rewind for Todoist" format set out in the [Todoist Brand usage guidelines](https://developer.todoist.com/api/v1/#section/Developing-with-Todoist/Brand-usage).
+- This project is not an official Todoist product. For anything relating to Todoist itself, contact [Todoist Inc.](https://www.todoist.com/contact).
 - The app connects directly from your browser to the official Todoist API using an API token you provide. It stores nothing on a server.
-
-If you represent Doist and would like a change to how the Todoist name or marks are used here, please open an issue or contact the author and it will be addressed promptly.
 
 ---
 
