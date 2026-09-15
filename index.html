@@ -101,6 +101,48 @@ input{font:inherit}
 .date-actions{display:flex;gap:8px;margin-top:12px}.date-actions button{flex:1;padding:8px;border-radius:8px;font-size:13px;font-weight:700}
 .date-apply{background:var(--red);color:#fff}.date-cancel{background:var(--line-soft)}.date-error{font-size:12px;color:var(--down);min-height:18px;margin-top:6px}
 
+/* controls — aligned with Todoist Enhanced: quiet surfaces, a compact radius
+   scale, and red reserved for the selected or primary action. Charts below
+   intentionally keep their existing visual treatment. */
+.login-card{max-width:420px;border-radius:12px;padding:32px;box-shadow:0 6px 20px rgba(28,25,23,.10)}
+.brand-mark{width:36px;height:36px;border-radius:8px;margin-bottom:18px;font-size:19px;box-shadow:none}
+.token{height:40px;padding:0 12px;border-color:var(--line);border-radius:6px;background:var(--surface);font-size:14px}
+.token:hover{border-color:var(--ink-faint)}
+.token:focus{border-color:var(--red);outline:2px solid rgba(209,69,59,.16);outline-offset:1px}
+.primary{min-height:36px;padding:0 14px;border-radius:6px;font-size:14px;box-shadow:0 1px 2px rgba(28,25,23,.12)}
+.demo-link{margin-top:8px;border-radius:6px;padding:8px 10px;font-size:13px}
+
+.bar{padding:12px 20px 10px;background:var(--surface);border-bottom:1px solid var(--line-soft)}
+.pill{min-height:44px;padding:0;background:transparent;color:var(--ink);grid-template-columns:1fr auto 1fr;box-shadow:none}
+.scopes{gap:3px;padding:3px;border-radius:10px;background:var(--line-soft)}
+.scopes button{min-height:30px;padding:0 12px;border-radius:7px;color:var(--ink-soft);font-size:13px;font-weight:500}
+.scopes button:hover{color:var(--ink)}
+.scopes button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(28,25,23,.12)}
+.nav{gap:2px;padding:3px 4px;border-radius:10px;background:var(--line-soft)}
+.nav button{width:28px;height:28px;border-radius:6px;color:var(--ink-soft);font-size:16px}
+.nav button:hover{background:var(--surface);color:var(--ink)}
+.nav .label{min-width:176px;color:var(--ink);font-size:14px;font-weight:600}
+.theme{width:32px;height:32px;margin-right:4px;border-radius:6px;background:transparent;color:var(--ink-soft)}
+.theme:hover{background:var(--line-soft);color:var(--ink)}
+.tool{min-height:32px;padding:0 11px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:13px;font-weight:600;box-shadow:0 1px 2px rgba(28,25,23,.04)}
+.tool:hover{border-color:var(--ink-faint);background:var(--surface)}
+.badge{background:var(--red);color:#fff;min-width:17px;height:17px;border-radius:999px}
+
+.menu,.date-pop,.gmenu{border-color:var(--line);border-radius:12px;box-shadow:0 6px 20px rgba(28,25,23,.14)}
+.menu{padding:8px}.menu h5{margin:14px 0 6px}.menu-row{margin-bottom:6px}.menu-row button{color:var(--red-deep)}
+.opt{min-height:32px;padding:6px 8px;border-radius:6px;font-size:13px}.opt:hover,.gmenu button:hover{background:var(--line-soft)}
+.search{height:34px;padding:0 10px;border-color:var(--line);border-radius:6px;background:var(--surface);font-size:13px}
+.search:focus,.date-row input:focus{border-color:var(--red);outline:2px solid rgba(209,69,59,.16);outline-offset:1px}
+.date-pop{padding:16px}.date-pop h3{font-size:14px}.date-row input{height:36px;padding:0 9px;border-radius:6px}
+.date-actions button{min-height:34px;padding:0 12px;border-radius:6px}.date-cancel{background:var(--line-soft);color:var(--ink)}.date-cancel:hover{background:var(--line)}
+.date-apply{box-shadow:0 1px 2px rgba(28,25,23,.12)}
+
+.controls{gap:6px}.ctl{min-height:32px;padding:0 10px;border-color:var(--line);border-radius:8px;font-size:13px;font-weight:600;box-shadow:0 1px 2px rgba(28,25,23,.04)}
+.ctl:hover{border-color:var(--ink-faint);background:var(--surface)}
+.ctl.off{border-style:solid;background:var(--surface);color:var(--ink-soft);font-weight:500}
+.gmenu{padding:6px}.gmenu button{min-height:32px;padding:6px 8px;border-radius:6px;font-size:13px}.gmenu button[aria-pressed="true"]{color:var(--red-deep)}
+.history button{border-radius:6px}.hbtn{min-height:34px;padding:0 12px;border-radius:6px}.hclose{width:34px;height:34px;border-radius:6px}
+
 /* layout */
 .grid{display:grid;grid-template-columns:290px 1fr;gap:32px;padding:12px 20px 0;align-items:start}
 .rail{position:sticky;top:100px;display:flex;flex-direction:column;gap:12px}
